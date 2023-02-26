@@ -73,9 +73,7 @@ textarea {
   font-family: 'Indie Flower', cursive;
 }
 
-#hour-9,
-#hour-10,
-#hour-11 {
+#hour {
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -86,6 +84,8 @@ textarea {
 #instruct {
   font-weight: 600;
   font-size: large;
+  padding: 0px 2px;
+  flex-wrap: wrap;
 }
 
 #past-font {
@@ -101,11 +101,6 @@ textarea {
 #future-font {
   color: #77dd77;
   font-size: larger;
-}
-
-#instruct {
-  padding: 0px 2px;
-  flex-wrap: wrap;
 }
 
 .display-3 {
