@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Indie+Flower&display=swap');
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -31,12 +33,12 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #fc9254;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #f7f25e;
   color: white;
 }
 
@@ -49,7 +51,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #ea2150;
   color: white;
 }
 
@@ -58,3 +60,54 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+.banner {
+  border: double;
+  padding: 5px;
+  margin: 5px;
+  border-width: 5px;
+  background-color: rgb(209, 66, 219);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+textarea {
+  font-family: 'Indie Flower', cursive;
+}
+
+#hour-9,
+#hour-10,
+#hour-11 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.lead {
+  color: #fdfdfc;
+}
+
+#instruct {
+  font-weight: 600;
+  font-size: large;
+}
+
+#past-font {
+  color:#f5a25a;
+  font-size: larger;
+}
+
+#present-font {
+  color: #f7f25e;
+  font-size: larger;
+}
+
+#future-font {
+  color: #77dd77;
+  font-size: larger;
+}
+
+#instruct {
+  padding: 0px 2px;
+  flex-wrap: wrap;
+}
+
+.display-3 {
+  font-weight: 400;
+}

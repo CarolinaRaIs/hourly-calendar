@@ -27,12 +27,15 @@
     p-5 = padding (5px)
     mb-4 = margin (4px)
     border-5 = border (5px) 
-    border-bottom = Adds a border to the bottom side of the header element
+    border-bottom = Adds a border to the bottom side of the header elemefnt
     border-dark = Specifies the color of the border to be dark
     text-center = Centers the text content of the header element horizontally-->
-    <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
+    <header class="text-center banner">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Bootstrap (utility classes): 
+      lead = Emphasizes. Gives a larger font size and increased line-height to the <p> element to make it stand out more from other paragraphs.-->
+      <p class="lead">What does your work day looking like today?</p>
+      <p id="instruct">Events that have passed are in <span id="past-font">orange</span>, current events are in <span id="present-font">yellow</span>, and future events are in <span id="future-font">green</span>.</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container-lg px-5">
@@ -113,7 +116,7 @@
       </div>
 
     <!-- Javascript references:-->
-    
+
     <!--Load jquery script before personal js code script tag-->
     <!-- The external JavaScript file being loaded is the jQuery library (A js lib that provides many features and funcs for handling events and manipulating the DOM)-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
