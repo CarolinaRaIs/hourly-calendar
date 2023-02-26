@@ -23,6 +23,13 @@
   </head>
 
   <body>
+    <!-- Bootstrap (utility classes): 
+    p-5 = padding (5px)
+    mb-4 = margin (4px)
+    border-5 = border (5px) 
+    border-bottom = Adds a border to the bottom side of the header element
+    border-dark = Specifies the color of the border to be dark
+    text-center = Centers the text content of the header element horizontally-->
     <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -41,6 +48,14 @@
 
       <!-- Example of a past time block. The "past" class adds a gray background color. -->
       <div id="hour-9" class="row time-block past">
+        <!-- Duplicate bootstrap styling for <div> 9AM, 10AM, 11AM-->
+        <!-- Bootstrap (utility classes): 
+        col-2 = The div element should occupy 2 columns out of 12 possible columns in a row (on all screen sizes)
+        col-md-1 = The div element should occupy 1 column out of 12 possible columns in a row (on medium and larger screen sizes)
+        text-center = The text within the div element is centered (horizzontally)
+        py-3 = Padding is adding to the top and bottom of the div element thats 3 times the default padding size
+        -->
+        <!-- hour = Custom CSS class (.hour) -->
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -50,29 +65,67 @@
 
       <!-- Example of a a present time block. The "present" class adds a red background color. -->
       <div id="hour-10" class="row time-block present">
+        <!-- Duplicate bootstrap styling for <div> 9AM, 10AM, 11AM-->
         <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+        <!-- <textarea> element is an empty space "" that is replaced by the user input-->
+        <!-- Bootstrap (utility classes): 
+        col-8 = The div element should occupy 8 columns out of 12 possible columns in a row (on all screen sizes)
+        col-md-10 = The div element should occupy 10 columns out of 12 possible columns in a row (on medium and larger screen sizes)
+        -->
+        <!--description = Custom class for unique styling in CSS (.description) -->
+        <!--rows = "3"    This attribute sets the initial number of rows of the textarea to 3 rows (rows dependedent on how much space have available on browser window size)-->
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <!-- Duplicate bootstrap <button> -->
+         <!-- Bootstrap (utility classes): 
+        btn = styles the button to have a uniform appearance across the site.
+        col-2 = The div element should occupy 2 columns out of 12 possible columns in a row (on all screen sizes)
+        col-md-1 = The div element should occupy 1 column out of 12 possible columns in a row (on medium and larger screen sizes)
+        -->
+        <!--saveBtn = Custom class for CSS stling (.saveBtn)-->
+        <!--aria-label = "save"   This attribute provides an accessible label for the button that can be read by assistive technologies such as screen readers. The word "save" will be said outloud by assitive technology-->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <!--Duplicate <i> Font Awesome class styling-->
+          <!-- The <i> element creates an icon (the save icon in this case)-->
+          <!-- Font Awesome class
+          fas = Specifies the font style to be used for the icon (displays icon as a solid glyph)
+          fa-save = Specifies the specific icon to be used. (The "fa-save" class indicates that the icon will be the "save" icon.)-->
+          <!-- aria-hidden = "true"  This attribute indicates that the icon should be hidden from assistive tecnhnology (ie: screen readers). This is because the icon is only decorative.-->
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
       <!-- Example of a future time block. The "future" class adds a green background color. -->
       <div id="hour-11" class="row time-block future">
+        <!-- Duplicate bootstrap styling for <div> 9AM, 10AM, 11AM-->
         <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+        <!-- <textarea> element is an empty space "" that is replaced by the user input-->
+        <!-- Bootstrap (utility classes): 
+        btn = styles the button to have a uniform appearance across the site.
+        col-2 = The div element should occupy 2 columns out of 12 possible columns in a row (on all screen sizes)
+        col-md-2 = The div element should occupy 2 columns out of 12 possible columns in a row (on medium and larger screen sizes)
+        -->
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+       <!-- Duplicate bootstrap <button> -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <!--Duplicate <i> Font Awesome class styling-->
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
+    <!-- Javascript references:-->
+    
+    <!--Load jquery script before personal js code script tag-->
+    <!-- The external JavaScript file being loaded is the jQuery library (A js lib that provides many features and funcs for handling events and manipulating the DOM)-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- The external JavaScript file being loaded is the Day.js library, which is a lightweight library for working with dates and times in JavaScript.-->
+    <!--This script allows the calendar application to use the features and functions provided by the Day.js library in our JavaScript code.-->
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"
     ></script>
-
+    
+    <!--Personal js-->
     <script src="script.js"></script>
   </body>
 </html>
