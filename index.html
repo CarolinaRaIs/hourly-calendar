@@ -31,14 +31,18 @@
     border-dark = Specifies the color of the border to be dark
     text-center = Centers the text content of the header element horizontally-->
     <header class="text-center banner">
-      <h1 class="display-3 font-weight-bold font-">My Live Scheduler</h1>
+      <h1 class="display-3 font-weight-bold">My Live Scheduler</h1>
       <!-- Bootstrap (utility classes): 
       lead = Emphasizes. Gives a larger font size and increased line-height to the <p> element to make it stand out more from other paragraphs.-->
       <p class="lead">What does your day look like today?</p>
       <p id="instruct">Events that have <span class="text-decoration-underline">passed</span> are in <span id="past-font">orange</span>, <span class="text-decoration-underline">current</span> events are in <span id="present-font">yellow</span>, and <span class="text-decoration-underline">future</span> events are in <span id="future-font">green</span>.</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container-lg px-5">
+
+    <!-- Bootstrap (utility classes): 
+    container-lg = Creates a container element that has a fixed width and centers the content horizonrally (designed for large screens)
+    px-5 = padding-x of 5px-->
+    <div class="container-md px-5">
       <!-- Use class for "past", "present", and "future" to apply styles to the
         time-block divs accordingly. The javascript will need to do this by
         adding/removing these classes on each div by comparing the hour in the
@@ -49,7 +53,40 @@
         code is implemented.
         -->
 
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
+      <!-- 6 am-->
+      <div id="hour-6" class="time-block row">
+        <div class="col-2 col-md-1 hour text-wrap py-5">
+          6AM
+        </div>
+        <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- 7 am-->
+      <div>
+        <div class="col-2 col-md-1 hour text-wrap py-5">
+          7AM
+        </div>
+        <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- 8 am-->
+      <div>
+        <div class="col-2 col-md-1 hour text-wrap py-5">
+          8AM
+        </div>
+        <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Example of a past time block. The "past" class adds a orange background color. -->
       <div id="hour-9" class="row time-block past">
         <!-- Duplicate bootstrap styling for <div> 9AM, 10AM, 11AM-->
         <!-- Bootstrap (utility classes): 
@@ -59,17 +96,17 @@
         py-3 = Padding is adding to the top and bottom of the div element thats 3 times the default padding size
         -->
         <!-- hour = Custom CSS class (.hour) -->
-        <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
+        <div class="col-2 col-md-1 hour text-wrap py-5">9AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <!-- Example of a a present time block. The "present" class adds a red background color. -->
+      <!-- Example of a a present time block. The "present" class adds a yellow background color. -->
       <div id="hour-10" class="row time-block present">
         <!-- Duplicate bootstrap styling for <div> 9AM, 10AM, 11AM-->
-        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+        <div class="col-2 col-md-1 hour text-wrap py-5">10AM</div>
         <!-- <textarea> element is an empty space "" that is replaced by the user input-->
         <!-- Bootstrap (utility classes): 
         col-8 = The div element should occupy 8 columns out of 12 possible columns in a row (on all screen sizes)
@@ -100,7 +137,7 @@
       <!-- Example of a future time block. The "future" class adds a green background color. -->
       <div id="hour-11" class="row time-block future">
         <!-- Duplicate bootstrap styling for <div> 9AM, 10AM, 11AM-->
-        <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+        <div class="col-2 col-md-1 hour text-wrap py-5">11AM</div>
         <!-- <textarea> element is an empty space "" that is replaced by the user input-->
         <!-- Bootstrap (utility classes): 
         btn = styles the button to have a uniform appearance across the site.
@@ -114,6 +151,81 @@
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
+
+
+      <!-- 12 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        12PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+      <!-- 1 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        1PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+      <!-- 2 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        2PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+
+      <!-- 3 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        3PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+
+      <!-- 4 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        4PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+
+      <!-- 5 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        5PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+
+      <!-- 6 pm-->
+      <div class="col-2 col-md-1 hour text-wrap py-5">
+        6PM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+
+
+
+
+
+
+
 
     <!-- Javascript references:-->
 
