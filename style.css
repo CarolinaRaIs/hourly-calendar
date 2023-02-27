@@ -18,12 +18,13 @@ textarea {
   white-space: pre-wrap;
 }
 
+/* Refers to entire block (row) that includes time, input, and save button */
 .time-block {
   border-radius: 15px;
 }
 
 .row {
-  border-top: 2px solid white;
+  border-top: 5px solid white;
 }
 
 .hour {
