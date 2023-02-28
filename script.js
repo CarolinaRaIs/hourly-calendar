@@ -63,18 +63,12 @@ $(document).ready(function () {
     timeBlockId.removeClass("past");
     timeBlockId.addClass("present");
     } else {
+    // must clear all other styling that could have occured up until the future event
     timeBlockId.removeClass("past");
     timeBlockId.removeClass("present");
     timeBlockId.addClass("future");
     }
   }
-  
-
-
-
-
-
-
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. 
