@@ -4,9 +4,11 @@ A calendar application that stores events hourly.
 
 ## Description
 
-This site is a full-stack web development assessment that simulates the type of multiple-choice assessment that would be administered by an employer as a part of the application process to obtain a job in web development. A user clicks through the interactive coding quiz, then enters their initials to save their high score before resetting and starting over. This site assists users familiarize themselves with these kind of tests and offers them feedback so that they can track their progress (highscores) and learn from incorrect answers.
+This is a daily planner that provides a color-coordinated representation of the user's current day to easily identify which scheduled events have passed, are currently occuring, or have yet to occur. 
 
-Web API concepts like event listeners, timer intervals, window objects, and local storage objects, were applied to this project as well as flexbox, media queries, and CSS variables as some of the other main components that were applied to this project for its success.
+To schedule events in the day, input text into the color-coordinated text boxes, then click the save icon adjacent to the text box. This ensures that the text does not dissapear upon refreshing the page. The text input should be stored to localStorage. The saved text will be displayed in its respective color relative to the current time displayed in the header, above the scheduled events. Events that have passed are displayed as orange text boxes, current events display as yellow text boxes, and future events display as green text boxes.
+
+Some of the main components implemented for the success of the app were Web API concepts like event listeners, time intervals, and storing local storage objects; the use of Bootstrap components to style the app directly from the index.html; jQuery in the script.js to simplify the manipulation of the DOM,; googlefonts to customize the fonts in style.css; FontAwesome in the script.js to access a collection of icons and symbols and select one for the save button; and moment.js JavaScript library to format the live date and time displayed in the header of the app. 
 
 ## Installation
 
@@ -32,7 +34,7 @@ The user will then be redirected to the "High Scores" page where the user's most
 
 
 To access the Github Repository visit:
-
+https://github.com/CarolinaRaIs/hourly-calendar 
 
 To access the deployed site visit:
 https://carolinarais.github.io/hourly-calendar/
