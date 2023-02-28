@@ -67,11 +67,12 @@ $(document).ready(function () {
   
   // Use iteration (for loop) to simplify code:
       // ${} ---> Use of string interpolation to embed variable i. i will be converted to a string
+      // .val() ----> to get the value from local storage and set it as the value of the input field ($(`#hour-${i} .description`)).
       // $(`#hour-${i} .description`).val(localStorage.getItem('hour-${i}'));
       // Using back ticks (``) not single quotes ('') to interpolate the i value of the string
         // $('#hour-6 .description').val(localStorage.getItem('hour-6')); .......
         // $('#hour-18 .description').val(localStorage.getItem('hour-18')); .........
-        
+        // Can confirm that task was succesfully achieved because in "Application" tab in Devtools, you can see that key "hour-i" (key) is associated to the input typed in (value) in the local storage
 for (var i=6; i <= 18; i++) {
   userInput = $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
   console.log(userInput);
