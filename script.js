@@ -73,10 +73,9 @@ $(document).ready(function () {
         // $('#hour-18 .description').val(localStorage.getItem('hour-18')); .........
         
 for (var i=6; i <= 18; i++) {
-  $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
+  userInput = $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
+  console.log(userInput);
 }
-
-  
 
   // TODO: Add code to display the current date in the header of the page.
 
@@ -95,6 +94,7 @@ function displayCurrentTime() {
 }
 
 displayCurrentTime();
+// Set interval to have time continually update instead of only when refresh the page
 setInterval(displayCurrentTime, 1000);
 
 });
