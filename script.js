@@ -43,7 +43,7 @@ $(document).ready(function () {
   // (1Q) How can the id attribute of each time-block be used to conditionally add or remove the past, present, and future classes? 
       // (1A) The id attribute of each time-block (hour-i) can be used to compare its value to the current time.
   // (2Q) How can Day.js be used to get the current hour in 24-hour time?
-      // (2A) dayjs().hour() ---> gets current hour in 24-hour time format
+      // (2A) dayjs().hour() ---> gets current hour (just the value of the hour) in 24-hour time format
   
   //(2A)
   var currentTime = dayjs().hour()
@@ -51,10 +51,11 @@ $(document).ready(function () {
   // (1A)
   // Instead of checking each time block (#hour-i) independently, iterate conditional with a for loop (i starts at 6 AM, ends at 6PM = (i=18))
   for(var i =6; i<=18; i++) {
+    console.log(currentTime);
     // `` ---> creates a template literal so that can use dynamic value (i) into the string
     var timeBlockId = $(`#hour-${i}`);
 
-    if (timeBlockId < currentTime) {
+    if (i < currentTime) {
     // .addClass ---> jQuery function used to add class "past" (change styling) to an element
     timeBlockId.addClass("past");
     } else if (i === currentTime) {
