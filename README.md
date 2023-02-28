@@ -19,7 +19,7 @@ N/A
 To schedule events in the calendar, input text into the color-coordinated text boxes, then click the save icon adjacent to the text box. This ensures that the text does not dissapear upon refreshing the page. The text input should be stored in localStorage of the browser. The saved text will be displayed in its respective color relative to the current time displayed in the header, above the scheduled events. Events that have passed are displayed as orange text boxes, current events display as yellow text boxes, and future events display as green text boxes.
 
 
-![plot](./quiz-highscores.png)
+![plot](./hourly-calendar.png)
 
 
 To access the Github Repository visit:
